@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Фитнес клуб в центре с шикарным видом на город! Новое оборудование, опытные тренеры, солярий. Бесплатное пробное занятие!">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/main.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=51722eb2-7796-468f-97f9-8ff588752a43&lang=ru_RU" type="text/javascript"></script>
+  <title>Фитнес клуб "Ultra Fitness" (Ультра Фитнес) | Тренажерный зал в Воронеже</title>
+</head>
+<body>
+<div class="cabinet">
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 mid-element">
+          <a href="/"><img src="./images/dist/logo.png" alt="logo"></a>
+        </div>
+        <div class="col-xl-7 mid-element">
+          <ul class="top-nav">
+            <li><a href="cabinet.html">О НАС</a></li>
+            <li><a href="#">НОВОСТИ</a></li>
+            <li><a href="#">СОЛЯРИЙ</a></li>
+            <li><a href="singleTrainer.html">ТРЕНЕРЫ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a href="#">РАСПИСАНИЕ</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 mid-element">
+          <div class="connect">
+            <div class="phones">
+              <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;
+              <a href="tel:74732292918">+7 (473) 229-29-18</a>
+            </div>
+            <div class="link-to-private">
+              <i class="fa fa-user" aria-hidden="true"></i>&nbsp;
+              <a href="/">Иванов Иван</a>
+              <a href="/" class="exit-link">Выход</a>
+            </div>
+          </div>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">О НАС</a></li>
+              <li><a class="menu__item" href="#">НОВОСТИ</a></li>
+              <li><a class="menu__item" href="#">СОЛЯРИЙ</a></li>
+              <li><a class="menu__item" href="#">ТРЕНЕРЫ</a></li>
+              <li><a class="menu__item" href="#">КОНТАКТЫ</a></li>
+              <li><a class="menu__item" href="#">РАСПИСАНИЕ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="tabs">
+    <div class="container">
+      <div class="row">
+       <div class="col-xl-4">
+         <div class="nav cabinet-tabs" role="tablist" aria-orientation="vertical">
+           <a class="cabinet-tab active" id="v-pills-private-tab" data-bs-toggle="pill" href="#v-pills-private" role="tab" aria-controls="v-pills-private" aria-selected="true">Личные данные</a>
+           <a class="cabinet-tab" id="v-pills-packs-tab" data-bs-toggle="pill" href="#v-pills-packs" role="tab" aria-controls="v-pills-packs" aria-selected="false">Членства, пакеты услуг</a>
+           <a class="cabinet-tab" id="v-pills-history-tab" data-bs-toggle="pill" href="#v-pills-history" role="tab" aria-controls="v-pills-history" aria-selected="false">История посещений</a>
+           <a class="cabinet-tab" id="v-pills-booking-tab" data-bs-toggle="pill" href="#v-pills-booking" role="tab" aria-controls="v-pills-booking" aria-selected="false">Бронирование занятий</a>
+           <a class="cabinet-tab" id="v-pills-store-tab" data-bs-toggle="pill" href="#v-pills-store" role="tab" aria-controls="v-pills-store" aria-selected="false">Магазин</a>
+           <a class="cabinet-tab" id="v-pills-money-tab" data-bs-toggle="pill" href="#v-pills-money" role="tab" aria-controls="v-pills-money" aria-selected="false">Пополнить счет</a>
+         </div>
+       </div>
+        <div class="col-xl-8">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-private" role="tabpanel" aria-labelledby="v-pills-private-tab">
+              <div class="private-pane">
+                <div class="pane-head">
+                  <div class="row">
+                    <div class="col-3 pane-title">Личный счет</div>
+                    <div class="col-3 pane-text">ОСНОВНОЙ: <span>0</span></div>
+                    <div class="col-3 pane-text">КЭШБЭК: <span>0</span></div>
+                    <div class="col-3 payment-text">
+                      <a href="#v-pills-money-tab" class="payment-link">
+                        <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Пополнить
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="pane-body">
+                  <div class="row">
+                    <div class="col-3 info-title">Фамилия:</div>
+                    <div class="col-5">
+                      <input disabled type="text" value="ИВАНОВ">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3 info-title">Имя:</div>
+                    <div class="col-5"><input disabled type="text" value="Иван"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3 info-title">Отчество:</div>
+                    <div class="col-5"><input disabled type="text" value="Иванович"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3 info-title">Дата рождения:</div>
+                    <div class="col-5"><input disabled type="text" name="date" value="01.01.2000"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3 info-title">Телефон:</div>
+                    <div class="col-5"><input disabled type="text" name="phone" value="+7-000-000-00-00"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3 info-title">E-Mail:</div>
+                    <div class="col-5"><input disabled type="text" value="mail@mail.com"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 edit-info"><i class="fa fa-pencil" aria-hidden="true"></i>Редактировать</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-packs" role="tabpanel" aria-labelledby="v-pills-packs-tab">2</div>
+            <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">3</div>
+            <div class="tab-pane fade" id="v-pills-booking" role="tabpanel" aria-labelledby="v-pills-booking-tab">4</div>
+            <div class="tab-pane fade" id="v-pills-store" role="tabpanel" aria-labelledby="v-pills-store-tab">
+              <div class="private-pane">
+                <div class="pane-head">
+                  <div class="row">
+                    <div class="col-3 pane-title">Личный счет</div>
+                    <div class="col-3 pane-text">ОСНОВНОЙ: <span>0</span></div>
+                    <div class="col-3 pane-text">КЭШБЭК: <span>0</span></div>
+                    <div class="col-3 payment-text">
+                      <a href="#v-pills-money-tab" class="payment-link">
+                        <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Пополнить
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="pane-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="nav store-tabs" role="tablist">
+                        <a class="store-tab active" id="v-pills-cards-tab" data-bs-toggle="pill" href="#v-pills-cards" role="tab" aria-controls="v-pills-cards" aria-selected="true">Карты</a>
+                        <a class="store-tab" id="v-pills-service-tab" data-bs-toggle="pill" href="#v-pills-service" role="tab" aria-controls="v-pills-service" aria-selected="false">Пакеты услуг</a>
+                        <a class="store-tab" id="v-pills-demo-tab" data-bs-toggle="pill" href="#v-pills-demo" role="tab" aria-controls="v-pills-demo" aria-selected="false">Пробные</a>
+                        <a class="store-tab" id="v-pills-once-tab" data-bs-toggle="pill" href="#v-pills-once" role="tab" aria-controls="v-pills-once" aria-selected="false">Разовые посещения</a>
+                        <a class="store-tab" id="v-pills-personal-tab" data-bs-toggle="pill" href="#v-pills-personal" role="tab" aria-controls="v-pills-personal" aria-selected="false">Персональные тренировки</a>
+                        <a class="store-tab" id="v-pills-book-tab" data-bs-toggle="pill" href="#v-pills-book" role="tab" aria-controls="v-pills-book" aria-selected="false">Забронируй карту</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="tab-content nested-content" id="v-pills-storeContent">
+                        <div class="tab-pane fade show active" id="v-pills-cards" role="tabpanel" aria-labelledby="v-pills-cards-tab">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="card-box">
+                                <p class="card-title">Карта на 8 занятий</p>
+                                <p class="card-price">2900 р.</p>
+                                <a href="#">КУПИТЬ</a>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="card-box">
+                                <p class="card-title">Карта 1 месяц - БЕЗЛИМИТ</p>
+                                <p class="card-price">2900 р.</p>
+                                <a href="#">КУПИТЬ</a>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="card-box with-old">
+                                <p class="card-title">Карта на 8 занятий</p>
+                                <p class="card-old">2900 р.</p>
+                                <p class="card-price">2900 р.</p>
+                                <a href="#">КУПИТЬ</a>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="card-box">
+                                <p class="card-title">Карта 1 месяц - БЕЗЛИМИТ</p>
+                                <p class="card-price">2900 р.</p>
+                                <a href="#">КУПИТЬ</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-service" role="tabpanel" aria-labelledby="v-pills-service-tab">3</div>
+                        <div class="tab-pane fade" id="v-pills-demo" role="tabpanel" aria-labelledby="v-pills-demo-tab">4</div>
+                        <div class="tab-pane fade" id="v-pills-once" role="tabpanel" aria-labelledby="v-pills-once-tab">5</div>
+                        <div class="tab-pane fade" id="v-pills-personal" role="tabpanel" aria-labelledby="v-pills-personal-tab">6</div>
+                        <div class="tab-pane fade" id="v-pills-book" role="tabpanel" aria-labelledby="v-pills-book-tab">7</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-money" role="tabpanel" aria-labelledby="v-pills-money-tab">6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<footer>
+  <a href="#" class="mobile-top">
+    <img src="images/dist/up.png" alt="up">
+    <img src="images/dist/m-up.png" alt="up">
+  </a>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6">
+        <div class="logo-wrapper">
+          <img src="./images/dist/logo-foot.png" alt="logo-foot">
+          <span>© Ultra Fitness 2020</span>
+        </div>
+      </div>
+      <div class="col-xl-6 align-self-center">
+        <div class="mail-wrapper">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:ultra-fitness-vrn@mail.ru">ultra-fitness-vrn@mail.ru</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--modals-->
+
+<!--  enter-->
+<div id="enter-modal" class="modal custom-modal">
+  <div class="modal-form">
+    <p class="modal-title">ВОЙТИ В ЛИЧНЫЙ КАБИНЕТ</p>
+    <form action="">
+      <input type="text" name="phone" placeholder="Телефон">
+      <input type="password" name="password" placeholder="Пароль">
+      <div class="to-forgive">
+        <a href="#request-password" class="request-pass">Забыли пароль?</a>
+      </div>
+      <div class="to-register">
+        Если у вас еще нет пароля для входа на сайт, вам нужно<br>
+        <a href="#register-modal" class="open-reg">зарегистрироваться</a>
+      </div>
+      <button class="button filled" type="submit">Войти</button>
+    </form>
+  </div>
+</div>
+<!--  enter-->
+
+<!--  register-->
+<div id="register-modal" class="modal custom-modal">
+  <div class="modal-form">
+    <p class="modal-title">Зарегистрироваться</p>
+    <form action="">
+      <input type="text" name="surname" placeholder="Фамилия">
+      <input type="text" name="name" placeholder="Имя">
+      <input type="text" name="email" placeholder="E-mail">
+      <input type="password" name="password" placeholder="Пароль">
+      <input type="password" name="retry" placeholder="Подтверждение пароля">
+      <button class="button filled" type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </div>
+</div>
+<!--  register-->
+
+<!--  resend-->
+<div id="request-password" class="modal custom-modal">
+  <div class="modal-form">
+    <p class="modal-title">Запрос пароля</p>
+    <form action="">
+      <input type="text" name="phone" placeholder="Телефон">
+      <button class="button filled" type="submit">Отправить SMS</button>
+    </form>
+  </div>
+</div>
+<!--  resend-->
+
+<!--  enter code-->
+<div id="register-code" class="modal custom-modal">
+  <div class="modal-form">
+    <p class="modal-title">ЗАРЕГИСТРИРОВАТЬСЯ</p>
+    <form action="">
+      <input type="text" name="code" placeholder="Код подтверждения">
+      <div class="to-forgive">
+        <a href="#">Повторить отправку</a>
+      </div>
+      <button class="button filled" type="submit">Подтвердить</button>
+    </form>
+  </div>
+</div>
+<!--  enter code-->
+
+<!--  success-->
+<div id="success" class="modal custom-modal">
+  <div class="modal-form">
+    <p class="modal-title">Вы успешно зарегистрированы</p>
+  </div>
+</div>
+<!--  success-->
+
+<!--  discount-->
+<div id="discount" class="modal custom-modal">
+  <img src="./images/dist/discount-man.png" alt="discount">
+  <div class="modal-form">
+    <div class="discount-text">
+      <span>₽5000</span>
+      <span>За два месяца</span>
+    </div>
+    <form action="">
+      <input type="text" name="phone" placeholder="Телефон">
+      <input type="password" name="password" placeholder="Пароль">
+      <button class="button filled" type="submit">Забронировать</button>
+    </form>
+  </div>
+</div>
+<!--  discount-->
+
+<!--modals-->
+<script src="js/app.min.js"></script>
+</body>
+</html>
